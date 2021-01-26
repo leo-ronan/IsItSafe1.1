@@ -10,8 +10,6 @@ import Jumbotron from './components/jumbotronn';
 import Search from './components/search';
 import './App.css';
 import './components/API-Call';
-require("dotenv").config();
-const express = require("express");
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,6 +17,7 @@ import {
   Link,
   Redirect
 } from "react-router-dom";
+require("dotenv").config();
 
 const api_key = process.env.WEATHERKEY;
 
